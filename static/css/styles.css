@@ -1,0 +1,97 @@
+/* General Styling */
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    background: white;
+    color: #007bff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#weatherInfo {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 90%;
+    max-width: 400px;
+}
+
+#weatherIcon {
+    width: 100px;
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input {
+        width: 250px;
+    }
+
+    button {
+        padding: 12px 15px;
+    }
+}
+
