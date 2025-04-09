@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from services import get_weather  # Import the weather service function
+from services import get_weather  
 
 app = Flask(__name__)
 
